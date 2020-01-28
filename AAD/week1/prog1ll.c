@@ -71,6 +71,7 @@ void disp()
 void main()
 {
 	int ch;
+	ins();
 	printf("1.delete\n2.check large no\nEnter the choice:");
 	scanf("%d",&ch);
 	printf("Enter the no:");
