@@ -1,8 +1,9 @@
 #include<iostream>
+#include<math.h>
 using namespace std;
 float calc(float p,float r,float n,float t)
 {
-	return (p*(1+(r/n))*n*t);
+	return (p*pow((1+(r/n)),(n*t)));
 }
 main()
 {
