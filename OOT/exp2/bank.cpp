@@ -22,7 +22,7 @@ class bank
 void bank::getdata()
 {
 	cout<<"Enter the name.\naccount no.\ntype of accouunt.\n";
-	cin>>name>>acc_no>>bal;
+	cin>>name>>acc_no>>type;
 }
 void bank::deposit()
 {
