@@ -2,15 +2,14 @@
 #include<stdio.h>
 void main()
 {
-	int a[1000000],ch,x;
+	int a[37000],ch,x;
 	clock_t t1,t2;
 	double m,n;
-	//printf("Enter the size of the array:");
-	//scanf("%f",&n);
-	n=999999;
-	printf("Enter the elements of the array:\n");
+	printf("Enter the size of the array:");
+	scanf("%f",&n);
+	//printf("Enter the elements of the array:\n");
 	for(int i=0;i<n;i++)
-		a[i]=i;
+		a[i]=rand();
 	t1=clock();
 	printf("1.Remove an element.\n2.Return the largest.\nEnter your choice:");
 	scanf("%d",&ch);
@@ -21,10 +20,10 @@ void main()
 	{
 		case 1:	for(int i=x;i<n;i++)
 				a[i]=a[i+1];
-			printf("Array after deletion\n");
+			//printf("Array after deletion\n");
 			n--;
-			for(int i=0;i<n;i++)
-				printf("%d",a[i]);
+			/*for(int i=0;i<n;i++)
+				printf("%d",a[i]);*/
 			break;
 		case 2:	for(int i=1;i<=n-x;i++)
 				if(s<a[x+i])
