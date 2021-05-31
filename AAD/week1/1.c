@@ -2,7 +2,7 @@
 #include<stdio.h>
 void main()
 {
-	int a[37000],ch,x;
+	int a[37000],ch,x,e,o;
 	clock_t t1,t2;
 	double m,n;
 	printf("Enter the size of the array:");
